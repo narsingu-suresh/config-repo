@@ -1,0 +1,11 @@
+server:
+  port: 8005
+  
+spring:
+  datasource:
+    url: jdbc:postgresql://payment-db:5432/payments
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  application:
+    name: payments-service
