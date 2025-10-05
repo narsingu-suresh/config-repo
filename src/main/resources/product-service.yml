@@ -1,0 +1,10 @@
+server:
+  port: 8081
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://product:product@product-db:27017/productdb
+
+app:
+  message: "Hello from Product Service (DEV)"
