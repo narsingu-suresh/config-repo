@@ -1,11 +1,17 @@
 server:
   port: 8010
-  
+
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5433/customers?currentSchema=public&serverTimezone=Asia/Kolkata
+    url: jdbc:postgresql://localhost:5433/customers?currentSchema=public
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
-  application:
-    name: customer-service
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: Asia/Kolkata
