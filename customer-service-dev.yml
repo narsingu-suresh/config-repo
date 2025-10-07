@@ -1,0 +1,11 @@
+server:
+  port: 8010
+  
+spring:
+  datasource:
+    url: jdbc:postgresql://payment-db:5432/customer
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  application:
+    name: customer-service
